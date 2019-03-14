@@ -5,7 +5,7 @@ import {fetchDeck, setAICards, setUserCards, hitAI, hitUser} from '../actions/bl
 
 export default class App extends React.component {
   hitMe = (caller) => {
-    if caller === "user" {
+    if (caller === "user") {
       store.dispatch(hitUser(store.getState().deck))
     }
     else {
