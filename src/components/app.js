@@ -1,6 +1,6 @@
 import React from 'react'
-import userBlackjack from 'user_blackjack'
-import aiBlackjack from 'ai_blackjack'
+import userBlackjack from './user_blackjack'
+import aiBlackjack from './ai_blackjack'
 import {fetchDeck, setAICards, setUserCards, hitAI, hitUser} from '../actions/blackjack_actions'
 
 export default class App extends React.component {
